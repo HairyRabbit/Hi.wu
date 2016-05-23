@@ -5,12 +5,27 @@ import { render } from 'react-dom'
 class App extends Component {
     render() {
         return (
-            <h1>Hello wu =3= </h1>
+            <div>
+            {
+                this.props.datas.map(n => <div>{n.name} - {n.editor}</div>)
+            }
+            </div>
         )
     }
 }
 
+let datas = [{
+    name: "rabbit",
+    editor: "emacs"
+},{
+    name: "PL",
+    editor: "vsc"
+},{
+    name: "wuwu",
+    editor: "emacs"
+}]
+
 render(
-    <App />,
+    <App datas={datas} />,
     document.getElementById("app")
 )
