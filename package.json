@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
-  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.9.0",
     "babel-loader": "^6.2.4",

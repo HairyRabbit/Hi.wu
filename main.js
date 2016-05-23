@@ -5,7 +5,7 @@ import { render } from 'react-dom'
 class App extends Component {
     render() {
         return (
-            <h1>Hello wu 3 </h1>
+            <h1>Hello wu =3= </h1>
         )
     }
 }
