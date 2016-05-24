@@ -3,11 +3,16 @@ import { render } from 'react-dom'
 
 
 class App extends Component {
+    loginfo(user) {
+        console.log(user.name, user.editor)
+    }
     render() {
         return (
             <div>
             {
-                this.props.datas.map(n => <div>{n.name} - {n.editor}</div>)
+                this.props.datas.map(
+                    n => <div onClick={() => this.loginfo(n) }>{`${n.name} - ${n.editor}`}</div>
+                )
             }
             </div>
         )
